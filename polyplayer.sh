@@ -7,7 +7,7 @@ CHROME_ICON="󰊯" #Any Chromium based browser.
 SPOTIFY_ICON="󰓇"
 MUSIC_ICON="󰌳"
 
-if [ "$(playerctl status)" == "Playing" ];
+if [ "$(playerctl status 2> /dev/null)" == "Playing" ];
 then
     PLAYER=$(echo $(playerctl metadata) |  awk '{print $1}')
     ARTIST=$(playerctl metadata artist)
