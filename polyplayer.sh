@@ -30,6 +30,8 @@ then
         ;;
         "firefox") echo $FIREFOX_ICON$ARTIST - $TITLE
         ;;
+        "mpv") echo $MUSIC_ICON$ARTIST - $TITLE
+        ;;
     esac
 else
     echo ""
